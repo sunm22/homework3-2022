@@ -164,14 +164,8 @@ img{
     
   }
 
-  a.skip{
-    background: white;
-    padding: 6px;
-    -webkit-transition: top 1s ease-out;
-    transition: left 1s ease-out;
-    z-index: 1;
+  a.skip:focus{
     /* Requirement 3 code here*/
-    position: absolute;
     left: 0px;
     top: 20px;
   }
