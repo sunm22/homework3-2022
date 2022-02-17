@@ -86,7 +86,7 @@ a{
 }
 
 a:hover{
-  text-decoration-style: wavy;
+  text-decoration: underline wavy;
 }
 
 a.skip{
@@ -101,7 +101,7 @@ a.skip{
 }
 
 /* Requirement 4 code here*/
-nav a:focus{
+a:focus{
   text-decoration: none;
   border-top: 2px solid yellow;
 }
@@ -117,8 +117,8 @@ nav a:focus{
 /* Requirements 6-10 here: */
 
 .intro{
-  background: #DDDDDD, #858585, #707070, or #B3B3B3;
   background-image: url(../images/header.jpg);
+  background-color: #707070;
   min-height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -164,6 +164,18 @@ img{
     
   }
 
+  a.skip{
+    background: white;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+    /* Requirement 3 code here*/
+    position: absolute;
+    left: 0px;
+    top: 20px;
+  }
+
   nav li{
     margin-left: 5%;
     margin-right:0;
@@ -173,7 +185,7 @@ img{
   .container{
     display: grid;
     grid-template-columns: 50px auto 500px auto 50px;
-    grid-template-rows: repeat(4, 300px)
+    grid-template-rows: 300px 300px 300px 300px;
   }
 
   .about, .method, .clients-image, .contact-image{
